@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfun(){
+            document.getElementById("hello").innerHTML="Saved";
+        }
+    </script>
+    <style>
+        td,tr {
+            padding: 0 20px;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body style="background-color:black;color:antiquewhite">
+    <center>
+    <h1 style="color:red">Welcome to our Restaurant</h1>
+    <h2 style="color:red">Please take a moment to fill the below details :)</h2>
+    <form action="/" method="post">
+        {% csrf_token %}
+        <table style="border: 1px solid black; margin: 0%;">
+        <tr><td><input type="text" placeholder="fullname" id="name" name="name"></td></tr><br>
+        <tr><td><input type="text" placeholder="phone" id="phone" name="phone"></td></tr><br>
+        <tr><td><input type="text" placeholder="gmail" id="gmail" name="gmail"></td></tr><br>
+        <tr><td><input type="number" placeholder="tableno" id="tableno" name="tableno"></td></tr><br>
+        </table>
+        <button type="submit">Enter</button>
+    </form>
+    </center>
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th {
+        border: 0px solid white;
+        font-size: medium;
+        border-collapse: collapse;
+        }
+        td {
+            padding: 0 20px;
+            font-size: x-large;
+        }
+        body{
+            background-image: url("images/restaurant.jpg");
+        }
+    </style>
+</head>
+<body style="background-color:black;color:antiquewhite;font-size: medium;">
+    <center>
+    <h1 style="color:red ;">MENU</h1>
+    </center>
+    <form action="/signin" method="post">
+        {% csrf_token %}
+        <hr>
+        <center>
+        <h3 style="color:darkkhaki">Starters</h3>
+        </center>
+        <center>
+        <table>
+        <tr><td><label>1 Spinach Artichoke Dip</label></td>
+        <td>$5</td>
+        <td><select id="spinach" name="spinach">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td></tr>
+        <tr><td><label>2 Crockpot Buffalo Chicken Wings.</label></td>
+        <td>$4</td>
+        <td><select id="crockpot" name="crockpot">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td></tr>
+        <tr>
+        <td><label>3 Cream Cheese Fruit Dip.</label></td>
+        <td>$7</td>
+        <td><select id="fruitdip" name="fruitdip">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td></tr>
+        <tr><td>
+        <label>4 Cocktail Meatballs</label></td>
+        <td>$8</td>
+        <td><select id="meatballs" name="meatballs">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td>
+        <tr><td>
+        <label>5 Hormel Chili Dip</label> </td>
+        <td>$5</td>
+        <td><select id="hormelchilidip" name="hormelchilidip">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td>
+        <tr><td>
+        <label>6 Mac and Cheese Bites</label></td>
+        <td>$7</td>
+        <td><select id="macandcheesebites" name="macandcheesebites">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td>
+        <tr><td>
+        <label>7 Mozzarella Sticks</label></td>
+        <td>$9</td>
+        <td><select id="mozzarellasticks" name="mozzarellasticks">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td>
+        <tr><td>
+        <label>8 Brioche Crab Melts</label></td>
+        <td>$7</td>
+        <td><select id="brioche" name="brioche">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td>
+        </table>
+        </center>
+        <hr>
+        <center>
+        <h3 style="color:darkkhaki">Lunch</h3>
+        </center>
+        <center>
+        <table>
+        <tr><td>
+        <label>1 Pulled BBQ Pork</label></td>
+        <td>$15</td>
+        <td><select id="pulledbbqpork" name="pulledbbqpork">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td></tr>
+        <tr><td>
+        <label>2 Meatloaf</label></td>
+        <td>$16</td>
+        <td><select id="meatloaf" name="meatloaf">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td></tr>
+        <tr><td>
+        <label>3 Wild Alaska salmon</label></td>
+        <td>$18</td>
+        <td><select id="wildalaskasalmon" name="wildalaskasalmon">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td></tr>
+        <tr><td>
+        <label>4 Baked beans</label></td>
+        <td>$13</td>
+        <td><select id="bakedbeans" name="bakedbeans">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td></tr>
+        <tr><td>
+        <label>5 Macaroni and cheese</label></td>
+        <td>$23</td>
+        <td><select id="macaroniandcheese" name="macaroniandcheese">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td></tr>
+        <tr><td>
+        <label>6 Cioppino</label></td>
+        <td>$20</td>
+        <td><select id="cioppino" name="cioppino">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td></tr>
+        <tr>
+        <td><label>7  Chicken Fried Steaks</label></td>
+        <td>$19</td>
+        <td><select id="chickenfriedsteaks" name="chickenfriedsteaks">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td></tr>
+        <tr><td>
+        <label>8 Scallions</label></td>
+        <td>$18</td><td>
+        <select id="scallions" name="scallions">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td></tr>
+        </table>
+        </center>   
+        <hr>
+        <center>
+        <h3 style="color:darkkhaki">Beverages</h3>
+        </center>
+        <center>
+        <table><tr><td>
+        <label>1 Syrah</label></td>
+        <td>$2</td><td>
+        <select id="syrah" name="syrah">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td></tr>
+        <tr><td>
+        <label>2 Zinfandel</label></td>
+        <td>$2</td>
+        <td><select id="zinfandel" name="zinfandel">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td>
+        <tr><td>
+        <label>3 Southern Comfort </label></td>
+        <td>$3</td><td>
+        <select id="southerncomfort" name="southerncomfort">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td></tr>
+        <tr><td>
+        <label>4 Tennessee Whiskey</label></td>
+        <td>$2</td><td>
+        <select id="tennesseewhiskey" name="tennesseewhiskey">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td></tr>
+        <tr><td>
+        <label>5 Wine Cooler</label></td>
+        <td>$3</td><td>
+        <select id="winecooler" name="winecooler">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td></tr>
+        </table>
+        <br>
+        <br>
+        <button type="submit">Place Order</button>
+        </center>   
+    </form>
+</body>
+</h2
